@@ -14,6 +14,8 @@ namespace APSWebMCV.Data
         {
         }
 
-        public DbSet<APSWebMCV.Models.Department> Department { get; set; }
+        public DbSet<Department> Department { get; set; }
+        public DbSet<Professor> Professor { get; set; }
+        public DbSet<Assessment> Assessment { get; set; }
     }
 }

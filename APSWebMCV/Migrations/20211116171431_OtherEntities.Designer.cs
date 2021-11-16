@@ -3,14 +3,16 @@ using System;
 using APSWebMCV.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace APSWebMCV.Migrations
 {
     [DbContext(typeof(APSWebMCVContext))]
-    partial class APSWebMCVContextModelSnapshot : ModelSnapshot
+    [Migration("20211116171431_OtherEntities")]
+    partial class OtherEntities
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
